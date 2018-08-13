@@ -1,0 +1,8 @@
+extends layout.pug
+block content
+    .form-wrapper
+        p You need to login to use the app:
+        form(action='login', method='POST', class='login-form')
+            input(type='text', name='username', placeholder="Insert a username...")
+            br
+            button(type='submit') Submit
